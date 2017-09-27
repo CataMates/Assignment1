@@ -1,0 +1,5 @@
+DEF VAR TOTAL AS INTEGER INIT 0.
+FOR EACH OrderLine NO-LOCK:
+    TOTAL = TOTAL + OrderLine.Qty * OrderLine.Price.
+END.
+DISPLAY TOTAL.
